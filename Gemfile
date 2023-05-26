@@ -25,7 +25,7 @@ gem "turbo-rails"
 gem "stimulus-rails"
 gem "faker"
 gem "httparty"
-
+gem "dotenv-rails", groups: [:development, :test]
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 gem "autoprefixer-rails"
