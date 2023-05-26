@@ -26,6 +26,7 @@ gem "stimulus-rails"
 gem "faker"
 gem "httparty"
 gem "dotenv-rails", groups: [:development, :test]
+gem "cloudinary"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 gem "autoprefixer-rails"
