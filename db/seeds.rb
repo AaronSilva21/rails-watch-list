@@ -10,7 +10,6 @@ require "json"
 puts "Cleaning up database..."
 Movie.destroy_all
 Bookmark.destroy_all
-Genre.destroy_all
 puts "Database cleaned"
 url = "http://tmdb.lewagon.com/movie/top_rated"
 10.times do |i|
@@ -25,10 +24,8 @@ url = "http://tmdb.lewagon.com/movie/top_rated"
       poster_url: "#{base_poster_url}#{movie["backdrop_path"]}",
       rating: movie["vote_average"]
     )
-    list = List.create(name: "#{movie.title} List")
 
     # Create a bookmark to associate the movie with the list
-    Bookmark.create(movie: movie, list: list)
   end
 end
 puts "Movies created"
